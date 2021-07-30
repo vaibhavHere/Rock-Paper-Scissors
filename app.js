@@ -12,7 +12,12 @@ window.onload = () => {
     setTimeout(typeWriter, 800);
 }
 var score = 0;
-highScore=localStorage.getItem("highScore")?localStorage.getItem("highScore"):localStorage.setItem("highScore",0);
+var highScore=localStorage.getItem('highScore');
+if(highScore==null)
+{
+    localStorage.setItem("highScore",0);
+    highScore=0;
+}
 highScoreText.innerHTML="Win Streak "+highScore;
 console.log(highScore)
 pickCard = () => random = Math.floor(Math.random() * 3)
@@ -35,15 +40,11 @@ checkVictory = (i, j) => {
         }
         if (j == 2) {
             score=score?--score:0;
-
-
             return "LOSE";
         }
     } else if (i == 2) {
         if (j == 0) {
             score=score?--score:0;
-
-
             return "LOSE";
         }
         if (j == 1) {
