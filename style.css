@@ -99,6 +99,7 @@ span {
 
 p {
     font-size: 2rem;
+    transition: 0.5s;
     color: white;
 }
 
@@ -193,13 +194,18 @@ transform: scale(0);
 transform: translate(0,200%);
 }
 .removebtn img{
-    transform: translate(0,35%);
+    transform: translate(0,18%);
 }
 .removebtn p{
-    transform: translate(0,80%);
+    transform: translate(0,165%);
 }
 
 @media screen and (max-width:768px) {
+    .cards{
+        margin: auto;
+        overflow: hidden;
+        width:19.8rem;
+    }
     .card{
         width: 5.6rem;
         margin: 2rem 0.5rem;
