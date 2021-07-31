@@ -9,19 +9,18 @@
     height: 15rem;
     width: 15rem;
     position: fixed;
-    top: -10%;
-    left: -5%;
     z-index: -1;
     background-color: #61b672;
     animation: rotate 8s linear infinite;
 }
-
+.big{
+top: -10%;
+    left: -5%;}
 .small {
     background-color: #FBF5F3;
     height: 10rem;
     width: 10rem;
     position: fixed;
-    inset: auto;
     bottom: -10%;
     right: -5%;
 }
@@ -194,10 +193,10 @@ transform: scale(0);
 transform: translate(0,200%);
 }
 .removebtn img{
-    transform: translate(0,18%);
+    transform: translate(0,35%);
 }
 .removebtn p{
-    transform: translate(0,165%);
+    transform: translate(0,100%);
 }
 
 @media screen and (max-width:768px) {
@@ -234,4 +233,13 @@ transform: translate(0,200%);
 p {
     font-size: 1.3rem;
 }
+.removebtn button {
+    transform: translate(0,200%);
+    }
+    .removebtn img{
+        transform: translate(0,18%);
+    }
+    .removebtn p{
+        transform: translate(0,165%);
+    }
 }
